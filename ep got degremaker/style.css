@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    background-image: url(./-goat-with-long-beard-jfzcdk1mp0dt9jxz.jpg);
+}
+
+header {
+    background-color: #333; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+/* Style for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the logo */
+.logo {
+    font-size: 24px; /* Adjust font size as needed */
+    filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(0deg); /* Inverse les couleurs de l'image pour obtenir une couleur rouge */
+}
+
+a {
+    font-size: 20px;
+    margin: 0;
+    display: inline-block; /* Pour que le lien occupe seulement l'espace qu'il nécessite */
+    text-align: center; /* Centre le texte à l'intérieur du lien */
+    width: 100%; /* Pour que le lien prenne toute la largeur disponible */
+  cursor: pointer;
+}
+
+p {
+    font-family: Arial, sans-serif; /* Choisissez la police de caractères */
+    font-size: 16px; /* Définissez la taille de la police */
+    color: #c9c61e; /* Choisissez la couleur du texte */
+    line-height: 1.5; /* Définissez la hauteur de ligne */
+    padding: 10px; /* Ajoutez un padding de 10 pixels pour les quatre côtés */
+}
+
+
+
+
+
+/* Style for the navigation links */
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px; /* Adjust margin between links as needed */
+}
+
+.nav-links li a {
+    color: #fff; /* Change link color as needed */
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+
+
+/* Style pour le conteneur du slider */
+.slider {
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    overflow: hidden; /* Assurez-vous que les images dépassant la largeur du slider sont masquées */
+}
+
+/* Style pour chaque image dans le slider */
+.slider img {
+    width: 50px; /* Définit la largeur des images à 50 pixels */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur définie */
+}
+
+
+/* Style pour chaque image dans le slider */
+.slider img {
+    width: 80px; /* Définit la largeur des images à 50 pixels */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur définie */
+    animation: slide 5s linear infinite; /* Animation infinie nommée "slide" qui dure 5 secondes avec une transition linéaire */
+}
+
+/* Animation pour le défilement des images */
+@keyframes slide {
+    0% { transform: translateX(0); } /* Commence à partir de la position de départ */
+    100% { transform: translateX(-100%); } /* Défilez jusqu'à la position de fin */
+}
+
+
+
+
+.container {
+    background-image: url(./-goat-with-long-beard-jfzcdk1mp0dt9jxz.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
+.container .heading {
+    font-size: 20px;
+    display: flex;
+    margin-left: 50px;
+    padding: 2rem 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 .5rem 1rem #000;
+    color: beige;
+}
+
+.container .musique-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+h2{
+    color: antiquewhite;
+  margin-bottom: 2px;
+}
+
+.container .musique-container .box {
+    height: 16rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: #b3990b;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.container .musique-container .box .image {
+    height: 100%;
+}
+
+.container .musique-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .musique-container .box .musique {
+    width: 75%; /* Changed from 100% to 75% */
+}
+
+.container .musique-container .box .musique .audio {
+    width: 100%;
+    height: 100%; /* Add this line to make the audio fill the height of its container */
+  margin: 0 auto; /* Center the audio horizontally */
+    outline: none;
+
+
+}
+
+.container .musique-container .box .musique audio::-webkit-media-controls-enclosure {
+    background: rgb(114, 104, 45);
+    width: 80%;
+    margin-right: 55px;
+    background-image: url('./trracrk.jpg');
+    
+}
+
+@media (max-width: 400px) {
+    .container .musique-container .box {
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+ 
+      
+    }
+
+    .container .musique-container .box .image {
+        height: 80%;
+        width: 50%;
+    }
+
+    .container .musique-container .box .musique .audio {
+        height: 20%;
+        margin-top: 0; /* Remove the previously added margin-top */
+    }
+}
